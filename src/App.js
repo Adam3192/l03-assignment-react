@@ -1,18 +1,21 @@
 import React from 'react';
+import Header from './Header.js';
+import Footer from './Footer.js';
+import Experience from './Experience.js';
+import experienceArray from './Experiences';
 
 function App() {
   return (
-    <div style={{ textAlign: 'center' }}>
-      <header>
-        <p>
-          Edit <code>src/App.js</code> and save to reload.
-        </p>
-        <a href="https://reactjs.org" target="_blank" rel="noopener noreferrer">
-          Learn React
-        </a>
-      </header>
+    <div>
+      <Header />
+      {
+        experienceArray.map(item => <Experience experience={item} />)
+      }
+      <Footer />
     </div>
   );
 }
 
 export default App;
+
+
