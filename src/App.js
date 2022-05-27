@@ -9,7 +9,7 @@ function App() {
     <div>
       <Header />
       {
-        experienceArray.map(item => <Experience experience={item} />)
+        experienceArray.map(item => (<Experience experience={item} />))
       }
       <Footer />
     </div>
@@ -18,4 +18,21 @@ function App() {
 
 export default App;
 
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+ {
+        experienceArray.map(experience => (<Experience experience={experience} />))
+      }
 
